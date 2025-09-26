@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Proyecto - Digitalización</title>
+		<meta name="description" content="Scaffold base para proyecto de digitalización. HTML, CSS y JS minimal." />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="#">Digitalización</a>
+				<button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+					☰
+				</button>
+				<nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="#proyectos">Proyectos</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+					</ul>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Cambiar tema">Modo</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1>Bienvenido al proyecto de Digitalización</h1>
+					<p>Scaffold base con HTML, CSS y JavaScript para empezar rápidamente.</p>
+					<p class="actions">
+						<a class="btn" href="#servicios">Ver servicios</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="servicios" class="section">
+				<div class="container">
+					<h2>Servicios</h2>
+					<p>Descripción breve de servicios de digitalización, gestión documental y automatización.</p>
+					<div class="grid">
+						<article class="card">
+							<h3>Escaneo</h3>
+							<p>Conversión de documentos físicos a formato digital.</p>
+							<div class="price">Precio: <strong>3€</strong></div>
+							<p><a class="btn" href="checkout.html?service=escaneo&price=3" aria-label="Contratar servicio de escaneo">Contratar</a></p>
+						</article>
+						<article class="card">
+							<h3>Indexación</h3>
+							<p>Organización y metadatos para búsquedas eficientes.</p>
+						</article>
+						<article class="card">
+							<h3>Archivado</h3>
+							<p>Almacenamiento seguro y recuperación rápida.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="proyectos" class="section alt">
+				<div class="container">
+					<h2>Proyectos</h2>
+					<p>Proyectos recientes y casos de estudio.</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>&copy; <span id="year"></span> Digitalización — Todos los derechos reservados.</p>
+			</div>
+		</footer>
+	</body>
+</html>
